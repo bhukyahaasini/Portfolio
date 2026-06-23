@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Haasini Bhukya | Full Stack Developer & AI/Data Science Engineer</title>
+  <meta name="description"
+    content="Portfolio of Haasini Bhukya, a Full Stack Developer & AI/Data Science Engineer. Discover projects in Machine Learning, IoT, Web Technologies, and more.">
+  <meta name="keywords"
+    content="Haasini Bhukya, Haasini, Bhukya, Full Stack Developer, AI Engineer, Data Science Engineer, Portfolio, Machine Learning, Web Developer, IoT">
+  <meta name="author" content="Haasini Bhukya">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Haasini Bhukya | Full Stack Developer & AI/Data Science Engineer">
+  <meta property="og:description"
+    content="Discover Haasini Bhukya's personal portfolio featuring full-stack development, Machine Learning models, and IoT solutions.">
+  <meta property="og:image" content="https://bhukyahaasini.github.io/assets/meta-cover.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Haasini Bhukya | Full Stack Developer & AI/Data Science Engineer">
+  <meta property="twitter:description"
+    content="Discover Haasini Bhukya's personal portfolio featuring full-stack development, Machine Learning models, and IoT solutions.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/nolan/64/portfolio.png">
+
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- FontAwesome Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Background Mesh & Grid Overlays -->
+  <div class="bg-mesh-container">
+    <div class="mesh-glow mesh-glow-1"></div>
+    <div class="mesh-glow mesh-glow-2"></div>
+    <div class="mesh-glow mesh-glow-3"></div>
+  </div>
+  <div class="grid-overlay"></div>
+
+  <!-- Custom Cursor Glow Spotlight -->
+  <div class="custom-cursor d-none d-lg-block"></div>
+  <div class="custom-cursor-glow d-none d-lg-block"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#hero">HAASINI<span>.</span></a>
+
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section id="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-content text-start reveal-element">
+            <p class="hero-subtitle">Hi, I'm</p>
+            <h1 class="hero-title text-gradient">Haasini Bhukya</h1>
+            <h2 class="h3 text-gradient-purple mb-3">Full Stack Developer | AI & Data Science Engineer</h2>
+            <p class="hero-desc">
+              Building intelligent applications, modern web experiences, and AI-powered solutions that solve real-world
+              problems.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#projects" class="btn btn-premium btn-premium-primary">
+                View Projects <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+              <a href="#contact" class="btn btn-premium btn-premium-secondary">
+                Contact Me
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5 mt-lg-0 position-relative reveal-element stagger-2">
+            <div class="canvas-container" id="canvas-container">
+              <!-- Futuristic 3D Floating Portrait -->
+              <!--<img src="C:\Users\User\Downloads\Gemini_Generated_Image_a8qbx6a8qbx6a8qb.png"
+                alt="Haasini Bhukya 3D Portrait" class="hero-portrait-img">-->
+
+              <!-- Three.js Canvas for 3D sphere & particle scene overlay -->
+              <canvas id="three-canvas" style="z-index: 3;"></canvas>
+
+              <!-- Floating Tech Icons to accent the 3D Sphere -->
+              <div class="floating-tech-icons">
+                <div class="tech-icon-float" title="Python"><i class="fab fa-python"></i></div>
+                <div class="tech-icon-float" title="JavaScript"><i class="fab fa-js"></i></div>
+                <div class="tech-icon-float" title="React"><i class="fab fa-react"></i></div>
+                <div class="tech-icon-float" title="Database"><i class="fas fa-database"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1 reveal-element reveal-left">
+            <h2 class="section-title text-start mb-4 left-align-title text-gradient">About Me</h2>
+            <p class="lead">
+              Artificial Intelligence and Data Science undergraduate passionate about Full Stack Development, Machine
+              Learning, and intelligent software systems.
+            </p>
+            <p class="text-muted">
+              Experienced in developing AI-driven applications, recommendation systems, IoT solutions, and modern web
+              platforms. Strong problem-solving mindset with a focus on creating impactful technology solutions that
+              drive actual user value.
+            </p>
+
+            <div class="row g-3 mt-4">
+              <div class="col-sm-6">
+                <div class="about-stat">
+                  <h3>8.41</h3>
+                  <p>Current CGPA</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="about-stat">
+                  <h3>100%</h3>
+                  <p>Practical Driven</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 about-img-container reveal-element reveal-right">
+            <div class="about-glow"></div>
+            <div class="about-card glass-panel text-center">
+              <!--<img src="assets/haasini_portrait.png" alt="Haasini Bhukya" class="img-fluid mb-4"
+                style="max-height: 250px; border-radius: 50%; filter: drop-shadow(0 0 15px rgba(0, 114, 255, 0.2)); border: 2px solid rgba(255, 255, 255, 0.1);">-->
+              <h3 class="h4">Haasini Bhukya</h3>
+              <p class="text-gradient">Innovator & Developer</p>
+              <div class="d-flex justify-content-center gap-3 mt-3 fs-5 text-muted">
+                <i class="fas fa-brain" title="AI Concepts"></i>
+                <i class="fas fa-code" title="Clean Code"></i>
+                <i class="fas fa-microchip" title="Hardware/IoT"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title text-gradient">Technical Arsenal</h2>
+        <p class="section-desc">A deep dive into the engineering tools, frameworks, databases, and scientific systems I
+          utilize to build cutting-edge software.</p>
+
+        <div class="row g-4">
+          <!-- Programming Languages -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-1">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-terminal"></i> Programming
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fab fa-python text-warning"></i> Python</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag"><i class="fab fa-java text-danger"></i> Java</span>
+                <span class="skill-tag"><i class="fab fa-js text-warning"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fas fa-database text-info"></i> SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-2">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-globe"></i> Web Stack
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fab fa-html5 text-danger"></i> HTML</span>
+                <span class="skill-tag"><i class="fab fa-css3-alt text-primary"></i> CSS</span>
+                <span class="skill-tag"><i class="fab fa-bootstrap text-purple"></i> Bootstrap</span>
+                <span class="skill-tag"><i class="fab fa-react text-info"></i> React.js</span>
+                <span class="skill-tag"><i class="fab fa-node-js text-success"></i> Node.js</span>
+                <span class="skill-tag">Express.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-3">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-brain"></i> Machine Learning
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Recommendation Systems</span>
+                <span class="skill-tag">Supervised Learning</span>
+                <span class="skill-tag">Unsupervised Learning</span>
+                <span class="skill-tag">Scikit-Learn</span>
+                <span class="skill-tag">Data Preprocessing</span>
+                <span class="skill-tag">Model Training</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-1">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-hdd"></i> Databases
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fas fa-leaf text-success"></i> MongoDB</span>
+                <span class="skill-tag"><i class="fas fa-server text-info"></i> MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-2">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-tools"></i> Engineering Tools
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag"><i class="fab fa-git-alt text-danger"></i> Git</span>
+                <span class="skill-tag"><i class="fab fa-github text-white"></i> GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Postman</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="col-md-6 col-lg-4 reveal-element reveal-scale stagger-3">
+            <div class="glass-panel skill-category-card">
+              <h3 class="skill-category-title">
+                <i class="fas fa-book-open"></i> Core Concepts
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag">DSA</span>
+                <span class="skill-tag">OOPs</span>
+                <span class="skill-tag">DBMS</span>
+                <span class="skill-tag">Operating Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title text-gradient">Featured Projects</h2>
+        <p class="section-desc">Explore hand-crafted projects that merge Full-Stack engineering, Internet of Things
+          (IoT), and Database platforms.</p>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Project 1 -->
+          <div class="col-md-6 reveal-element reveal-left">
+            <div class="glass-panel project-card">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="project-title">Smart Lost & Found Tracker</h3>
+              </div>
+              <div class="project-body">
+                <p class="project-desc">
+                  An intelligent tracking system built to monitor personal belongings in real time, leveraging proximity
+                  scanning and hardware-cloud triggers.
+                </p>
+                <ul class="project-features-list">
+                  <li><i class="fas fa-circle-check"></i> Real-Time Tracker Map</li>
+                  <li><i class="fas fa-circle-check"></i> Proximity Scanning</li>
+                  <li><i class="fas fa-circle-check"></i> Push Notification Alerts</li>
+                  <li><i class="fas fa-circle-check"></i> IoT Device Synchronization</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="project-tech-badge">Flutter</span>
+                  <span class="project-tech-badge">Node.js</span>
+                  <span class="project-tech-badge">Firebase</span>
+                  <span class="project-tech-badge">ESP32 Hardware</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/bhukyahaasini" target="_blank" class="project-link">
+                  Code Repo <i class="fab fa-github"></i>
+                </a>
+                <span class="text-success small d-flex align-items-center gap-1">
+                  <span class="spinner-grow spinner-grow-sm" role="status" style="width: 8px; height: 8px;"></span> Live
+                  System
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-6 reveal-element reveal-right">
+            <div class="glass-panel project-card">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-hotel"></i>
+                </div>
+                <h3 class="project-title">Hotel Management System</h3>
+              </div>
+              <div class="project-body">
+                <p class="project-desc">
+                  A full hotel management platform developed to enable smooth room reservations, billing, database sync,
+                  and client dashboard management.
+                </p>
+                <ul class="project-features-list">
+                  <li><i class="fas fa-circle-check"></i> Room Status Panel</li>
+                  <li><i class="fas fa-circle-check"></i> Guest Directory Database</li>
+                  <li><i class="fas fa-circle-check"></i> Transaction & Invoicing</li>
+                  <li><i class="fas fa-circle-check"></i> Relational MySQL Storage</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="project-tech-badge">Python</span>
+                  <span class="project-tech-badge">MySQL</span>
+                  <span class="project-tech-badge">XAMPP Server</span>
+                  <span class="project-tech-badge">HTML/CSS/JS</span>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="https://github.com/bhukyahaasini" target="_blank" class="project-link">
+                  Code Repo <i class="fab fa-github"></i>
+                </a>
+                <span class="text-muted small">Completed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Certifications Section -->
+    <section id="certifications">
+      <div class="container">
+        <h2 class="section-title text-gradient">Certifications</h2>
+        <p class="section-desc">Validations of skill acquisitions and professional standards from globally acknowledged
+          institutions.</p>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5 reveal-element reveal-left">
+            <div class="glass-panel cert-card">
+              <div class="cert-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Cisco C Programming Certification</h4>
+                <p>Cisco Academy validation in structured systems programming, algorithmic foundations, memory
+                  optimization, and modular script development.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5 reveal-element reveal-right stagger-2">
+            <div class="glass-panel cert-card">
+              <div class="cert-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Cisco Programming Essentials in Python</h4>
+                <p>Comprehensive credential in Python programming covering data operations, script modularity, OOP
+                  concepts, exceptions, and libraries.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Experience Timeline -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title text-gradient">Learning & Development</h2>
+        <p class="section-desc">My professional journey is defined by continuous technical learning, self-driven AI
+          development, and web engineering experiments.</p>
+
+        <div class="timeline">
+          <!-- Timeline 1 -->
+          <div class="timeline-container left reveal-element reveal-left">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">Current Focus</span>
+              <h4>Full Stack Development</h4>
+              <p class="subtitle">Web Foundations & Integrations</p>
+              <p>Constructing scalable applications using HTML5, CSS3, JS, Bootstrap 5, Node, and MongoDB. Focusing
+                heavily on responsive aesthetics, glassmorphism designs, and state logic.</p>
+            </div>
+          </div>
+
+          <!-- Timeline 2 -->
+          <div class="timeline-container right reveal-element reveal-right">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">Research Area</span>
+              <h4>Machine Learning & AI</h4>
+              <p class="subtitle">Intelligent Solutions</p>
+              <p>Creating model training procedures using Python, Scikit-learn, NLP structures, recommendation systems,
+                and structured preprocessing routines to analyze data values.</p>
+            </div>
+          </div>
+
+          <!-- Timeline 3 -->
+          <div class="timeline-container left reveal-element reveal-left">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">Hardware Project</span>
+              <h4>Internet of Things (IoT)</h4>
+              <p class="subtitle">Device-to-Cloud Workflows</p>
+              <p>Integrating ESP32 chips, Bluetooth proximity signals, Firebase Realtime Database, and Flutter apps to
+                bind physical telemetry with responsive software alerts.</p>
+            </div>
+          </div>
+
+          <!-- Timeline 4 -->
+          <div class="timeline-container right reveal-element reveal-right">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">Academic Scope</span>
+              <h4>Theoretical Foundations</h4>
+              <p class="subtitle">Computer Science Essentials</p>
+              <p>Studying advanced Data Structures & Algorithms, Object-Oriented Principles, Database Systems (DBMS),
+                and Operating Systems at VRSEC.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title text-gradient">Academic Profile</h2>
+        <p class="section-desc">A log of my educational background, highlighting academic performance standards and
+          specializations.</p>
+
+        <div class="timeline">
+          <!-- VRSEC -->
+          <div class="timeline-container left reveal-element reveal-left">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">2023 - 2027</span>
+              <h4>Velagapudi Ramakrishna Siddhartha Engineering College</h4>
+              <p class="subtitle">B.Tech in Artificial Intelligence & Data Science</p>
+              <p>Specialized coursework in AI algorithms, data analytics, structures, models, databases, and programming
+                languages.</p>
+              <div class="gpa-tag">CGPA: 8.41 / 10</div>
+            </div>
+          </div>
+
+          <!-- Junior College -->
+          <div class="timeline-container right reveal-element reveal-right">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">2021 - 2023</span>
+              <h4>Sri Sarada Junior College</h4>
+              <p class="subtitle">Intermediate Education (MPC)</p>
+              <p>Advanced focus on Mathematics, Physics, and Chemistry core fields, developing logical foundations.</p>
+
+            </div>
+          </div>
+
+          <!-- School -->
+          <div class="timeline-container left reveal-element reveal-left">
+            <div class="glass-panel timeline-card">
+              <span class="timeline-date">2020 - 2021</span>
+              <h4>N.S.M Public School</h4>
+              <p class="subtitle">Secondary Education (CBSE)</p>
+              <p>Comprehensive secondary syllabus foundation with honors in mathematics and scientific courses.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Coding Profiles Section -->
+    <section id="profiles">
+      <div class="container">
+        <h2 class="section-title text-gradient">Coding Benchmarks</h2>
+        <p class="section-desc">Review my active developer checkpoints, contributions, and problem-solving logs across
+          platforms.</p>
+
+        <div class="profile-grid">
+          <!-- GitHub -->
+          <a href="https://github.com/bhukyahaasini" target="_blank"
+            class="glass-panel profile-card github reveal-element reveal-scale stagger-1">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <small class="text-muted mt-2">bhukyahaasini</small>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/haasini-bhukya" target="_blank"
+            class="glass-panel profile-card linkedin reveal-element reveal-scale stagger-2">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+            <small class="text-muted mt-2">haasini-bhukya</small>
+          </a>
+
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/" target="_blank"
+            class="glass-panel profile-card leetcode reveal-element reveal-scale stagger-3">
+            <i class="fas fa-code-branch"></i>
+            <span>LeetCode</span>
+            <small class="text-muted mt-2">Problem Solving</small>
+          </a>
+
+          <!-- GFG -->
+          <a href="https://geeksforgeeks.org/" target="_blank"
+            class="glass-panel profile-card geeksforgeeks reveal-element reveal-scale stagger-4">
+            <i class="fas fa-graduation-cap"></i>
+            <span>GeeksforGeeks</span>
+            <small class="text-muted mt-2">Articles & Practice</small>
+          </a>
+
+          <!-- CodeChef -->
+          <a href="https://codechef.com/" target="_blank"
+            class="glass-panel profile-card codechef reveal-element reveal-scale stagger-5">
+            <i class="fas fa-terminal"></i>
+            <span>CodeChef</span>
+            <small class="text-muted mt-2">Contests</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title text-gradient">Get In Touch</h2>
+        <p class="section-desc">Have an opportunity, proposal, or a query? Drop a message and let's establish contact.
+        </p>
+
+        <div class="row g-5">
+          <!-- Info Details -->
+          <div class="col-lg-5 reveal-element reveal-left">
+            <div class="glass-panel contact-info-panel d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h4 mb-4">Contact Information</h3>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h5>Email</h5>
+                    <p><a href="mailto:bhukyahaasini@gmail.com"
+                        class="text-white text-decoration-none">bhukyahaasini@gmail.com</a></p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fas fa-location-dot"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h5>Location</h5>
+                    <p>Vijayawada, Andhra Pradesh, India</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="contact-item-text">
+                    <h5>Affiliation</h5>
+                    <p>Undergraduate, VRSEC</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-4 border-top border-secondary-subtle">
+                <h4 class="h6 text-muted text-uppercase mb-3">Recruiter Note</h4>
+                <p class="small text-muted mb-0">Open to entry-level Full Stack, AI, and Software Engineering
+                  internships, co-ops, and junior roles starting 2027.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Area -->
+          <div class="col-lg-7 position-relative reveal-element reveal-right">
+            <div class="glass-panel position-relative">
+              <!-- Success Animation Overlay -->
+              <div class="form-success-overlay">
+                <div class="success-icon">
+                  <i class="fas fa-check"></i>
+                </div>
+                <h3>Message Sent Successfully!</h3>
+                <p class="text-muted text-center max-width-350 mt-2 px-3">
+                  Thank you for reaching out. Haasini will review your details and respond shortly.
+                </p>
+                <button type="button" id="closeSuccessOverlay"
+                  class="btn btn-premium btn-premium-primary mt-3">Close</button>
+              </div>
+
+              <!-- Contact Form -->
+              <form id="contactForm" novalidate>
+                <div class="contact-form-group">
+                  <input type="text" id="contactName" class="contact-input" placeholder=" " required>
+                  <label for="contactName" class="contact-label">Full Name</label>
+                  <div class="form-feedback invalid-feedback">Please enter your name.</div>
+                </div>
+
+                <div class="contact-form-group">
+                  <input type="email" id="contactEmail" class="contact-input" placeholder=" " required>
+                  <label for="contactEmail" class="contact-label">Email Address</label>
+                  <div class="form-feedback invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="contact-form-group">
+                  <input type="text" id="contactSubject" class="contact-input" placeholder=" " required>
+                  <label for="contactSubject" class="contact-label">Subject</label>
+                  <div class="form-feedback invalid-feedback">Please enter a subject.</div>
+                </div>
+
+                <div class="contact-form-group">
+                  <textarea id="contactMessage" class="contact-input" placeholder=" " required></textarea>
+                  <label for="contactMessage" class="contact-label">Your Message (Min. 10 chars)</label>
+                  <div class="form-feedback invalid-feedback">Message must be at least 10 characters long.</div>
+                </div>
+
+                <button type="submit" class="btn btn-premium btn-premium-primary w-100 py-3">
+                  Send Message <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-6 text-center text-md-start">
+          <div class="footer-logo">HAASINI<span>.</span></div>
+          <p class="text-muted mb-0">Full Stack Developer | AI & Data Science Engineer</p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+          <div class="footer-socials">
+            <a href="https://linkedin.com/in/haasini-bhukya" target="_blank" class="footer-social-link"
+              title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/bhukyahaasini" target="_blank" class="footer-social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:bhukyahaasini@gmail.com" class="footer-social-link" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center">
+        <p>&copy; 2026 Haasini Bhukya. Built with liquid glass design systems. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle with Popper via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <!-- Three.js Library via CDN (for 3D Hero Scene) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    integrity="sha512-33LAd9CjhzusJ585B1P7Q4U4y0Z4X93Dk4P0+eN440eG65t6N4pP6S85U01g3w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+  <!-- Custom script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
